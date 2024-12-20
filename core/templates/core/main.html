@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>
-        WELCOME
+        {{title}}
     </h1>
     <div>
         <form method="post" enctype="multipart/form-data">
@@ -11,7 +11,9 @@
                 <button class="btn" type="submit" > SEND </button>
         </form>
     </div>
+    {% for mess in messages %}
      <div class="message-box">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>{{mess.text}} - {{mess.rand_id}}</p>
     </div>
+    {% endfor %}
 {% endblock %}
