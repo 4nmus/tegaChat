@@ -13,7 +13,9 @@
     </div>
     {% for mess in messages %}
      <div class="message-box">
-        <p>{{mess.text}} - {{mess.rand_id}}</p>
-    </div>
+         <p>{{mess.text}}</p>
+         <p>{{mess.rand_id}}</p>
+
+     </div>
     {% endfor %}
 {% endblock %}

@@ -27,7 +27,6 @@ class ShowMessages(CreateView):
         form.instance.rand_id = hashlib.sha256(user_id.encode('utf-8')).hexdigest()[:9]
         return super().form_valid(form)
 
-
 def SetSession(request):
     #user id based on current time with hash
     user_id = hashlib.sha256(f"{time.time()}".encode('utf-8')).hexdigest()[:9]
