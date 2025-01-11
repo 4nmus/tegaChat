@@ -120,7 +120,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
@@ -129,8 +128,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #used for static folder with all css
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, '..', 'static')
+    os.path.join(PROJECT_ROOT,'..', 'static')
 ]
-
-MEDIA_URL = "/pictures/"
-MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
