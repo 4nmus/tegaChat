@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.message-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 12px;
+    width: 500px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+form{
+    text-align: center;
+}
